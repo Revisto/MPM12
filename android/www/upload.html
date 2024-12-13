@@ -131,7 +131,7 @@
         $(document).ready(function() {
             // Fetch podcasts and populate the select options
             $.ajax({
-                url: 'http://192.168.43.233:8000/api/podcasts/',
+                url: 'http://209.38.52.183:8000/api/podcasts/',
                 method: 'GET',
                 success: function(data) {
                     var podcastSelect = $('#podcast');
@@ -151,7 +151,7 @@
                 var formData = new FormData(this);
     
                 $.ajax({
-                    url: 'http://192.168.43.233:8000/api/episodes/upload/',
+                    url: 'http://209.38.52.183:8000/api/episodes/upload/',
                     method: 'POST',
                     data: formData,
                     processData: false,

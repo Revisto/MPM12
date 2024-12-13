@@ -295,7 +295,7 @@
 	<!-- JS -->
 	<script>
 		document.addEventListener('DOMContentLoaded', function () {
-			fetch('http://192.168.43.233:8000/api/podcasts/')
+			fetch('http://209.38.52.183:8000/api/podcasts/')
 				.then(response => response.json())
 				.then(data => {
 					const podcastList = document.getElementById('recommended-podcasts');
@@ -331,7 +331,7 @@
 
 	<script>
 		document.addEventListener('DOMContentLoaded', function () {
-			fetch('http://192.168.43.233:8000/api/podcasts/latest')
+			fetch('http://209.38.52.183:8000/api/podcasts/latest')
 				.then(response => response.json())
 				.then(data => {
 					const releasesContainer = document.getElementById('releases-container');

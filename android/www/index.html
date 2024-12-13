@@ -348,7 +348,7 @@
     <!-- JS -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            fetch('http://192.168.43.233:8000/api/podcasts/most_trending/')
+            fetch('http://209.38.52.183:8000/api/podcasts/most_trending/')
                 .then(response => response.json())
                 .then(data => {
                     const carousel = document.getElementById('artists');
@@ -393,7 +393,7 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            fetch('http://192.168.43.233:8000/api/episodes/most_popular/')
+            fetch('http://209.38.52.183:8000/api/episodes/most_popular/')
                 .then(response => response.json())
                 .then(data => {
                     const podcastList = document.getElementById('podcast-list');
@@ -420,17 +420,28 @@
                             <h4><a href="podcast.html?podcast_id=${podcast.podcast}">${podcast.title.length > 35 ? podcast.title.substring(0, 35) + '...' : podcast.title}</a></h4>
                             <span><a href="podcast.html?podcast_id=${podcast.podcast}">${podcast.podcast_name}</a></span>
                         </div>
+                        <div>
+                            <span class="single-item__time">${Math.floor(Math.random() * 50) +10} : ${Math.floor(Math.random() * 3)} </span>
+                        </div>
                     `;
                         podcastList.appendChild(listItem);
                     });
                 })
                 .catch(error => console.error('Error fetching podcasts:', error));
-        }); f
+        });
+   
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const timeElement = document.querySelector('#random-time');
+            if (timeElement) {
+                timeElement.textContent = getRandomTime();
+            }
+        });
     </script>
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            fetch('http://192.168.43.233:8000/api/podcasts/latest')
+            fetch('http://209.38.52.183:8000/api/podcasts/latest')
                 .then(response => response.json())
                 .then(data => {
                     const releasesContainer = document.getElementById('releases-container');
@@ -462,7 +473,7 @@
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const userId = localStorage.getItem('user_id');
-            fetch('http://192.168.43.233:8000/api/episodes/recommended?user_id=' + userId)
+            fetch('http://209.38.52.183:8000/api/episodes/recommended?user_id=' + userId)
                 .then(response => response.json())
                 .then(data => {
                     const podcastList = document.getElementById('recommended-podcasts');
@@ -485,6 +496,9 @@
                             <h4><a href="#">${podcast.title}</a></h4>
                             <span><a href="podcast.html">${podcast.podcast_name}</a></span>
                         </div>
+                         <div>
+                            <span class="single-item__time">${Math.floor(Math.random() * 50) +10} : ${Math.floor(Math.random() * 3)} </span>
+                        </div>
                         
                     `;
                         podcastList.appendChild(listItem);
@@ -497,7 +511,7 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            fetch('http://192.168.43.233:8000/api/podcasts/ai_generated')
+            fetch('http://209.38.52.183:8000/api/podcasts/ai_generated')
                 .then(response => response.json())
                 .then(data => {
                     const releasesContainer = document.getElementById('ai-container');

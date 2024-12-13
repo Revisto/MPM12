@@ -480,7 +480,7 @@
 
 			const podcastId = getQueryParam('podcast_id');
 			if (podcastId) {
-				fetch(`http://192.168.43.233:8000/api/podcasts/${podcastId}/`)
+				fetch(`http://209.38.52.183:8000/api/podcasts/${podcastId}/`)
 					.then(response => response.json())
 					.then(data => {
 						document.getElementById('artist-image').src = data.image;
@@ -510,7 +510,7 @@
 
 			const podcastId = getQueryParam('podcast_id');
 			if (podcastId) {
-				fetch(`http://192.168.43.233:8000/api/podcasts/${podcastId}/`)
+				fetch(`http://209.38.52.183:8000/api/podcasts/${podcastId}/`)
 					.then(response => response.json())
 					.then(data => {
 						const podcastUrl = window.location.href;
@@ -540,7 +540,7 @@
 			}
 
 			const podcastId = getQueryParam('podcast_id');
-			fetch(`http://192.168.43.233:8000/api/podcasts/${podcastId}/episodes`)
+			fetch(`http://209.38.52.183:8000/api/podcasts/${podcastId}/episodes`)
 				.then(response => response.json())
 				.then(data => {
 					const podcastList = document.getElementById('podcast-list');
@@ -640,7 +640,7 @@
 					const episodeId = this.getAttribute('data-episode-id');
 					const userId = localStorage.getItem('user_id'); // Assuming user_id is stored in localStorage
 
-					fetch('http://192.168.43.233:8000/api/likes/like-episode/', {
+					fetch('http://209.38.52.183:8000/api/likes/like-episode/', {
 						method: 'POST',
 						headers: {
 							'Content-Type': 'application/json'
@@ -749,7 +749,7 @@
 		document.addEventListener('DOMContentLoaded', function () {
 			const commentsList = document.getElementById('commentsList');
 			const productId = getQueryParam('podcast_id');
-			const apiUrl = `http://192.168.43.233:8000/api/comments/podcast/${productId}/`;
+			const apiUrl = `http://209.38.52.183:8000/api/comments/podcast/${productId}/`;
 
 			// Fetch comments from API
 			fetch(apiUrl)
@@ -791,7 +791,7 @@
 				const userId = localStorage.getItem('user_id');
 				const podcastId = getQueryParam('podcast_id');
 
-				fetch("http://192.168.43.233:8000/api/comments/", {
+				fetch("http://209.38.52.183:8000/api/comments/", {
 					method: 'POST',
 					headers: {
 						'Content-Type': 'application/json'
