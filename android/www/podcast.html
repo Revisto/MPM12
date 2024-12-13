@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/select2.min.css">
+	<link rel="stylesheet" href="css/paymentfont.min.css">
+	<link rel="stylesheet" href="css/slider-radio.css">
+	<link rel="stylesheet" href="css/plyr.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<!-- Favicons -->
+	<link rel="icon" type="image/png" href="icon/favicon-32x32.png" sizes="32x32">
+	<link rel="applayer__artistple-touch-icon" href="icon/favicon-32x32.png">
+
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Dmitry Volkov">
+	<title>ولنا - قالب HTML پخش موسیقی و موسیقی آنلاین</title>
+
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__content">
+			<div class="header__logo">
+				<a href="index.html">
+					<img src="img/logo.svg" alt="">
+				</a>
+			</div>
+
+			<nav class="header__nav">
+				<a href="profile.html">پروفایل</a>
+				<a href="about.html">درباره ما</a>
+				<a href="contacts.html">تماس با ما</a>
+			</nav>
+
+			<form action="#" class="header__search">
+				<input type="text" placeholder="هنرمند , آهنگ یا محصول">
+				<button type="button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+						<path
+							d="M21.71,20.29,18,16.61A9,9,0,1,0,16.61,18l3.68,3.68a1,1,0,0,0,1.42,0A1,1,0,0,0,21.71,20.29ZM11,18a7,7,0,1,1,7-7A7,7,0,0,1,11,18Z" />
+					</svg></button>
+				<button type="button" class="close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+						<path
+							d="M13.41,12l6.3-6.29a1,1,0,1,0-1.42-1.42L12,10.59,5.71,4.29A1,1,0,0,0,4.29,5.71L10.59,12l-6.3,6.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0L12,13.41l6.29,6.3a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42Z" />
+					</svg></button>
+			</form>
+
+			<div class="header__actions">
+				<div class="header__action header__action--search">
+					<button class="header__action-btn" type="button"><svg xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 24 24">
+							<path
+								d="M21.71,20.29,18,16.61A9,9,0,1,0,16.61,18l3.68,3.68a1,1,0,0,0,1.42,0A1,1,0,0,0,21.71,20.29ZM11,18a7,7,0,1,1,7-7A7,7,0,0,1,11,18Z" />
+						</svg></button>
+				</div>
+
+				<div class="header__action header__action--note">
+					<span>1</span>
+					<a href="#" class="header__action-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+							<path
+								d="M19.05566,2h-14a3.00328,3.00328,0,0,0-3,3V19a3.00328,3.00328,0,0,0,3,3h14a3.00328,3.00328,0,0,0,3-3V5A3.00328,3.00328,0,0,0,19.05566,2Zm-14,2h14a1.001,1.001,0,0,1,1,1v8H17.59082a1.99687,1.99687,0,0,0-1.66406.89062L14.52051,16H9.59082L8.18457,13.89062A1.99687,1.99687,0,0,0,6.52051,13H4.05566V5A1.001,1.001,0,0,1,5.05566,4Zm14,16h-14a1.001,1.001,0,0,1-1-1V15H6.52051l1.40625,2.10938A1.99687,1.99687,0,0,0,9.59082,18h4.92969a1.99687,1.99687,0,0,0,1.66406-.89062L17.59082,15h2.46484v4A1.001,1.001,0,0,1,19.05566,20Z" />
+						</svg></a>
+
+					<div class="header__drop">
+						<div class="header__note header__note--info">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+								<path
+									d="M12,2A10,10,0,1,0,22,12,10.01114,10.01114,0,0,0,12,2Zm0,18a8,8,0,1,1,8-8A8.00917,8.00917,0,0,1,12,20Zm0-8.5a1,1,0,0,0-1,1v3a1,1,0,0,0,2,0v-3A1,1,0,0,0,12,11.5Zm0-4a1.25,1.25,0,1,0,1.25,1.25A1.25,1.25,0,0,0,12,7.5Z" />
+							</svg>
+							<p>پادکست شخصی شما آماده است</p>
+							<span>دقایقی پیش</span>
+						</div>
+					</div>
+				</div>
+
+
+
+				<div class="header__action header__action--signin">
+					<a class="header__action-btn" href="start.html">
+						<span>وارد شوید</span>
+						<svg style="transform: rotate(180deg);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+							<path
+								d="M20,12a1,1,0,0,0-1-1H11.41l2.3-2.29a1,1,0,1,0-1.42-1.42l-4,4a1,1,0,0,0-.21.33,1,1,0,0,0,0,.76,1,1,0,0,0,.21.33l4,4a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42L11.41,13H19A1,1,0,0,0,20,12ZM17,2H7A3,3,0,0,0,4,5V19a3,3,0,0,0,3,3H17a3,3,0,0,0,3-3V16a1,1,0,0,0-2,0v3a1,1,0,0,1-1,1H7a1,1,0,0,1-1-1V5A1,1,0,0,1,7,4H17a1,1,0,0,1,1,1V8a1,1,0,0,0,2,0V5A3,3,0,0,0,17,2Z" />
+						</svg>
+					</a>
+				</div>
+			</div>
+
+			<button class="header__btn" type="button">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- sidebar -->
+	<div class="sidebar">
+		<!-- sidebar logo -->
+		<div class="sidebar__logo">
+			<img src="img/logo.svg" alt="">
+		</div>
+		<!-- end sidebar logo -->
+
+		<!-- sidebar nav -->
+		<ul class="sidebar__nav">
+			<li class="sidebar__nav-item">
+				<a href="index.html" class="sidebar__nav-link"><svg xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 24 24">
+						<path
+							d="M20,8h0L14,2.74a3,3,0,0,0-4,0L4,8a3,3,0,0,0-1,2.26V19a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V10.25A3,3,0,0,0,20,8ZM14,20H10V15a1,1,0,0,1,1-1h2a1,1,0,0,1,1,1Zm5-1a1,1,0,0,1-1,1H16V15a3,3,0,0,0-3-3H11a3,3,0,0,0-3,3v5H6a1,1,0,0,1-1-1V10.25a1,1,0,0,1,.34-.75l6-5.25a1,1,0,0,1,1.32,0l6,5.25a1,1,0,0,1,.34.75Z">
+						</path>
+					</svg> <span>صفحه اصلی</span></a>
+			</li>
+
+			<li class="sidebar__nav-item">
+				<a href="artists.html" class="sidebar__nav-link"><svg xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 24 24">
+						<path
+							d="M12.3,12.22A4.92,4.92,0,0,0,14,8.5a5,5,0,0,0-10,0,4.92,4.92,0,0,0,1.7,3.72A8,8,0,0,0,1,19.5a1,1,0,0,0,2,0,6,6,0,0,1,12,0,1,1,0,0,0,2,0A8,8,0,0,0,12.3,12.22ZM9,11.5a3,3,0,1,1,3-3A3,3,0,0,1,9,11.5Zm9.74.32A5,5,0,0,0,15,3.5a1,1,0,0,0,0,2,3,3,0,0,1,3,3,3,3,0,0,1-1.5,2.59,1,1,0,0,0-.5.84,1,1,0,0,0,.45.86l.39.26.13.07a7,7,0,0,1,4,6.38,1,1,0,0,0,2,0A9,9,0,0,0,18.74,11.82Z" />
+					</svg> <span>هنرمندان</span></a>
+			</li>
+
+			<li class="sidebar__nav-item">
+				<a href="releases.html" class="sidebar__nav-link"><svg xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 24 24">
+						<path
+							d="M21.65,2.24a1,1,0,0,0-.8-.23l-13,2A1,1,0,0,0,7,5V15.35A3.45,3.45,0,0,0,5.5,15,3.5,3.5,0,1,0,9,18.5V10.86L20,9.17v4.18A3.45,3.45,0,0,0,18.5,13,3.5,3.5,0,1,0,22,16.5V3A1,1,0,0,0,21.65,2.24ZM5.5,20A1.5,1.5,0,1,1,7,18.5,1.5,1.5,0,0,1,5.5,20Zm13-2A1.5,1.5,0,1,1,20,16.5,1.5,1.5,0,0,1,18.5,18ZM20,7.14,9,8.83v-3L20,4.17Z" />
+					</svg> <span>منتشر شده ها</span></a>
+			</li>
+
+			<li class="sidebar__nav-item">
+				<a href="events.html" class="sidebar__nav-link"><svg xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 24 24">
+						<path
+							d="M12,19a1,1,0,1,0-1-1A1,1,0,0,0,12,19Zm5,0a1,1,0,1,0-1-1A1,1,0,0,0,17,19Zm0-4a1,1,0,1,0-1-1A1,1,0,0,0,17,15Zm-5,0a1,1,0,1,0-1-1A1,1,0,0,0,12,15ZM19,3H18V2a1,1,0,0,0-2,0V3H8V2A1,1,0,0,0,6,2V3H5A3,3,0,0,0,2,6V20a3,3,0,0,0,3,3H19a3,3,0,0,0,3-3V6A3,3,0,0,0,19,3Zm1,17a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V11H20ZM20,9H4V6A1,1,0,0,1,5,5H6V6A1,1,0,0,0,8,6V5h8V6a1,1,0,0,0,2,0V5h1a1,1,0,0,1,1,1ZM7,15a1,1,0,1,0-1-1A1,1,0,0,0,7,15Zm0,4a1,1,0,1,0-1-1A1,1,0,0,0,7,19Z" />
+					</svg> <span>رویداد ها</span></a>
+			</li>
+
+			<li class="sidebar__nav-item">
+				<a href="podcasts.html" class="sidebar__nav-link"><svg xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 24 24">
+						<path
+							d="M12,15a4,4,0,0,0,4-4V5A4,4,0,0,0,8,5v6A4,4,0,0,0,12,15ZM10,5a2,2,0,0,1,4,0v6a2,2,0,0,1-4,0Zm10,6a1,1,0,0,0-2,0A6,6,0,0,1,6,11a1,1,0,0,0-2,0,8,8,0,0,0,7,7.93V21H9a1,1,0,0,0,0,2h6a1,1,0,0,0,0-2H13V18.93A8,8,0,0,0,20,11Z" />
+					</svg> <span>پادکست ها</span></a>
+			</li>
+
+			<!-- collapse -->
+			<li class="sidebar__nav-item">
+				<a class="sidebar__nav-link" data-toggle="collapse" href="#collapseMenu1" role="button"
+					aria-expanded="false" aria-controls="collapseMenu1"><svg xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 24 24">
+						<path
+							d="M19,5.5H12.72l-.32-1a3,3,0,0,0-2.84-2H5a3,3,0,0,0-3,3v13a3,3,0,0,0,3,3H19a3,3,0,0,0,3-3V8.5A3,3,0,0,0,19,5.5Zm1,13a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V5.5a1,1,0,0,1,1-1H9.56a1,1,0,0,1,.95.68l.54,1.64A1,1,0,0,0,12,7.5h7a1,1,0,0,1,1,1Z" />
+					</svg> <span>صفحات</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+						<path
+							d="M17,9.17a1,1,0,0,0-1.41,0L12,12.71,8.46,9.17a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42l4.24,4.24a1,1,0,0,0,1.42,0L17,10.59A1,1,0,0,0,17,9.17Z" />
+					</svg></a>
+
+				<div class="collapse" id="collapseMenu1">
+					<ul class="sidebar__menu sidebar__menu--scroll">
+						<li><a href="podcast.html">هنرمند</a></li>
+						<li><a href="event.html">رویداد</a></li>
+						<li><a href="release.html">منتشرشده</a></li>
+						<li><a href="product.html">محصول</a></li>
+						<li><a href="article.html">مقاله</a></li>
+						<li><a href="cart.html">سبد خرید</a></li>
+						<li><a href="profile.html">پروفایل</a></li>
+						<li><a href="about.html">درباره ما</a></li>
+						<li><a href="contacts.html">تماس باما</a></li>
+						<li><a href="pricing.html">خرید اشتراک</a></li>
+						<li><a href="privacy.html">حریم شخصی</a></li>
+						<li><a href="start.html">وارد شوید</a></li>
+						<li><a href="signup.html">ثبت نام</a></li>
+						<li><a href="forgot.html">رمز خودرا فراموش کرده اید</a></li>
+						<li><a href="404.html">صفحه 404</a></li>
+					</ul>
+				</div>
+			</li>
+			<!-- end collapse -->
+
+			<li class="sidebar__nav-item">
+				<a href="store.html" class="sidebar__nav-link"><svg xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 24 24">
+						<path
+							d="M8.5,19A1.5,1.5,0,1,0,10,20.5,1.5,1.5,0,0,0,8.5,19ZM19,16H7a1,1,0,0,1,0-2h8.49121A3.0132,3.0132,0,0,0,18.376,11.82422L19.96143,6.2749A1.00009,1.00009,0,0,0,19,5H6.73907A3.00666,3.00666,0,0,0,3.92139,3H3A1,1,0,0,0,3,5h.92139a1.00459,1.00459,0,0,1,.96142.7251l.15552.54474.00024.00506L6.6792,12.01709A3.00006,3.00006,0,0,0,7,18H19a1,1,0,0,0,0-2ZM17.67432,7l-1.2212,4.27441A1.00458,1.00458,0,0,1,15.49121,12H8.75439l-.25494-.89221L7.32642,7ZM16.5,19A1.5,1.5,0,1,0,18,20.5,1.5,1.5,0,0,0,16.5,19Z" />
+					</svg> <span>فروشگاه</span></a>
+			</li>
+
+			<li class="sidebar__nav-item">
+				<a href="news.html" class="sidebar__nav-link"><svg xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 24 24">
+						<path
+							d="M16,14H8a1,1,0,0,0,0,2h8a1,1,0,0,0,0-2Zm0-4H10a1,1,0,0,0,0,2h6a1,1,0,0,0,0-2Zm4-6H17V3a1,1,0,0,0-2,0V4H13V3a1,1,0,0,0-2,0V4H9V3A1,1,0,0,0,7,3V4H4A1,1,0,0,0,3,5V19a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V5A1,1,0,0,0,20,4ZM19,19a1,1,0,0,1-1,1H6a1,1,0,0,1-1-1V6H7V7A1,1,0,0,0,9,7V6h2V7a1,1,0,0,0,2,0V6h2V7a1,1,0,0,0,2,0V6h2Z" />
+					</svg> <span>اخبار</span></a>
+			</li>
+		</ul>
+		<!-- end sidebar nav -->
+	</div>
+	<!-- end sidebar -->
+
+	<!-- player -->
+	<div class="player">
+		<div class="player__cover">
+			<img src="" alt="">
+		</div>
+
+		<div class="player__content" style="padding-bottom: 40px;">
+			<span class="player__track"><b class="player__title"></b> – <span class="player__artist"></span></span>
+			<audio src="" id="audio" controls></audio>
+		</div>
+	</div>
+	<button class="player__btn" type="button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+			<path
+				d="M21.65,2.24a1,1,0,0,0-.8-.23l-13,2A1,1,0,0,0,7,5V15.35A3.45,3.45,0,0,0,5.5,15,3.5,3.5,0,1,0,9,18.5V10.86L20,9.17v4.18A3.45,3.45,0,0,0,18.5,13,3.5,3.5,0,1,0,22,16.5V3A1,1,0,0,0,21.65,2.24ZM5.5,20A1.5,1.5,0,1,1,7,18.5,1.5,1.5,0,0,1,5.5,20Zm13-2A1.5,1.5,0,1,1,20,16.5,1.5,1.5,0,0,1,18.5,18ZM20,7.14,9,8.83v-3L20,4.17Z" />
+		</svg> پلیر</button>
+	<!-- end player -->
+
+	<!-- main content -->
+	<main class="main">
+		<div class="container-fluid">
+			<div class="row row--grid">
+				<div class="col-12">
+					<div class="article article--page">
+						<!-- article content -->
+						<div class="article__content" id="article-content">
+							<div class="release__cover">
+								<img src="" id="artist-image" alt="">
+							</div>
+							<div>
+								<h1 id="artist-title"></h1>
+								<span id="artist-author"></span>
+								<p id="artist-description"></p>
+							</div>
+
+
+						</div>
+
+						<!-- end article content -->
+
+						<!-- share -->
+						<div class="share" id="share-links">
+							<a href="#" class="share__link share__link--fb"><svg width="9" height="17"
+									viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M5.56341 16.8197V8.65888H7.81615L8.11468 5.84663H5.56341L5.56724 4.43907C5.56724 3.70559 5.63693 3.31257 6.69042 3.31257H8.09873V0.5H5.84568C3.1394 0.5 2.18686 1.86425 2.18686 4.15848V5.84695H0.499939V8.6592H2.18686V16.8197H5.56341Z" />
+								</svg>اشتراک گذاری</a>
+							<a href="#" class="share__link share__link--tw"><svg width="16" height="12"
+									viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M7.55075 3.19219L7.58223 3.71122L7.05762 3.64767C5.14804 3.40404 3.47978 2.57782 2.06334 1.1902L1.37085 0.501686L1.19248 1.01013C0.814766 2.14353 1.05609 3.34048 1.843 4.14552C2.26269 4.5904 2.16826 4.65396 1.4443 4.38914C1.19248 4.3044 0.972149 4.24085 0.951164 4.27263C0.877719 4.34677 1.12953 5.31069 1.32888 5.69202C1.60168 6.22165 2.15777 6.74068 2.76631 7.04787L3.28043 7.2915L2.67188 7.30209C2.08432 7.30209 2.06334 7.31268 2.12629 7.53512C2.33613 8.22364 3.16502 8.95452 4.08833 9.2723L4.73884 9.49474L4.17227 9.8337C3.33289 10.321 2.34663 10.5964 1.36036 10.6175C0.888211 10.6281 0.5 10.6705 0.5 10.7023C0.5 10.8082 1.78005 11.4014 2.52499 11.6344C4.75983 12.3229 7.41435 12.0264 9.40787 10.8506C10.8243 10.0138 12.2408 8.35075 12.9018 6.74068C13.2585 5.88269 13.6152 4.315 13.6152 3.56293C13.6152 3.07567 13.6467 3.01212 14.2343 2.42953C14.5805 2.09056 14.9058 1.71983 14.9687 1.6139C15.0737 1.41264 15.0632 1.41264 14.5281 1.59272C13.6362 1.91049 13.5103 1.86812 13.951 1.39146C14.2762 1.0525 14.6645 0.438131 14.6645 0.258058C14.6645 0.22628 14.5071 0.279243 14.3287 0.374576C14.1398 0.480501 13.7202 0.639389 13.4054 0.734722L12.8388 0.914795L12.3247 0.565241C12.0414 0.374576 11.6427 0.162725 11.4329 0.0991699C10.8978 -0.0491255 10.0794 -0.0279404 9.59673 0.14154C8.2852 0.618204 7.45632 1.84694 7.55075 3.19219Z" />
+								</svg>اشتراک گذاری</a>
+							<a href="#" class="share__link share__link-tl"><svg xmlns="http://www.w3.org/2000/svg"
+									x="0px" y="0px" width="15" height="15" viewBox="0 0 50 50">
+									<path
+										d="M46.137,6.552c-0.75-0.636-1.928-0.727-3.146-0.238l-0.002,0C41.708,6.828,6.728,21.832,5.304,22.445	c-0.259,0.09-2.521,0.934-2.288,2.814c0.208,1.695,2.026,2.397,2.248,2.478l8.893,3.045c0.59,1.964,2.765,9.21,3.246,10.758	c0.3,0.965,0.789,2.233,1.646,2.494c0.752,0.29,1.5,0.025,1.984-0.355l5.437-5.043l8.777,6.845l0.209,0.125	c0.596,0.264,1.167,0.396,1.712,0.396c0.421,0,0.825-0.079,1.211-0.237c1.315-0.54,1.841-1.793,1.896-1.935l6.556-34.077	C47.231,7.933,46.675,7.007,46.137,6.552z M22,32l-3,8l-3-10l23-17L22,32z">
+									</path>
+								</svg>اشتراک گذاری</a>
+						</div>
+						<!-- end share -->
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-12 col-md-6 col-xl-4">
+				<div class="row row--grid">
+					<!-- title -->
+					<div class="col-12">
+						<div class="main__title">
+							<h2><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+									<path
+										d="M21.65,2.24a1,1,0,0,0-.8-.23l-13,2A1,1,0,0,0,7,5V15.35A3.45,3.45,0,0,0,5.5,15,3.5,3.5,0,1,0,9,18.5V10.86L20,9.17v4.18A3.45,3.45,0,0,0,18.5,13,3.5,3.5,0,1,0,22,16.5V3A1,1,0,0,0,21.65,2.24ZM5.5,20A1.5,1.5,0,1,1,7,18.5,1.5,1.5,0,0,1,5.5,20Zm13-2A1.5,1.5,0,1,1,20,16.5,1.5,1.5,0,0,1,18.5,18ZM20,7.14,9,8.83v-3L20,4.17Z" />
+								</svg><a href="#">اپیزودها</a></h2>
+						</div>
+					</div>
+					<!-- end title -->
+					<div class="col-12">
+						<div class="release">
+							<div class="release__list" style="height: auto !important;">
+								<ul class="main__list main__list--playlist main__list--dashbox" id="podcast-list">
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- events -->
+			<section class="row row--grid">
+				<!-- title -->
+				<div class="col-12">
+					<div class="main__title">
+						<h2>اسپانسر</h2>
+
+
+					</div>
+				</div>
+				<!-- end title -->
+
+				<div class="col-12">
+					<div class="main__carousel-wrap">
+						<div class="main__carousel main__carousel--events owl-carousel" id="events">
+							<div class="event" data-bg="img/events/event1.jpg">
+								<h3 class="event__title"><a href="event.html">بیمه سامان</a></h3>
+								<p class="event__address">پایان یک زندگی آغاز نسل بعدی</p>
+							</div>
+
+							<div class="event" data-bg="img/events/event2.jpg">
+								<h3 class="event__title"><a href="event.html">سداد</a></h3>
+								<p class="event__address">امنیت در پرداخت های شما</p>
+							</div>
+
+							<div class="event" data-bg="img/events/event3.jpg">
+								<h3 class="event__title"><a href="event.html">شرکت صنایع تولیدی کروز</a></h3>
+								<p class="event__address">داستان موفقیت خودت رو آغاز کن</p>
+							</div>
+							<div class="event" data-bg="img/events/event5.jpg">
+								<h3 class="event__title"><a href="event.html">بازار</a></h3>
+								<p class="event__address">پادکستی برای شناخت کامل اپ هایی که همه باید داشته باشند
+								</p>
+							</div>
+
+						</div>
+
+						<button class="main__nav main__nav--prev" data-nav="#events" type="button"><svg
+								xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+								<path
+									d="M17,11H9.41l3.3-3.29a1,1,0,1,0-1.42-1.42l-5,5a1,1,0,0,0-.21.33,1,1,0,0,0,0,.76,1,1,0,0,0,.21.33l5,5a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42L9.41,13H17a1,1,0,0,0,0-2Z" />
+							</svg></button>
+						<button class="main__nav main__nav--next" data-nav="#events" type="button"><svg
+								xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+								<path
+									d="M17.92,11.62a1,1,0,0,0-.21-.33l-5-5a1,1,0,0,0-1.42,1.42L14.59,11H7a1,1,0,0,0,0,2h7.59l-3.3,3.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0l5-5a1,1,0,0,0,.21-.33A1,1,0,0,0,17.92,11.62Z" />
+							</svg></button>
+					</div>
+				</div>
+			</section>
+			<!-- end events -->
+
+
+		</div>
+	</main>
+	<!-- end main content -->
+
+
+
+
+
+	<!-- modal info -->
+	<div id="modal-info2" class="zoom-anim-dialog mfp-hide modal modal--info">
+		<span class="modal__icon modal__icon--green">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+				<path
+					d="M14.72,8.79l-4.29,4.3L8.78,11.44a1,1,0,1,0-1.41,1.41l2.35,2.36a1,1,0,0,0,.71.29,1,1,0,0,0,.7-.29l5-5a1,1,0,0,0,0-1.42A1,1,0,0,0,14.72,8.79ZM12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm0,18a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z">
+				</path>
+			</svg>
+		</span>
+
+		<button class="modal__close" type="button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+				<path
+					d="M13.41,12l4.3-4.29a1,1,0,1,0-1.42-1.42L12,10.59,7.71,6.29A1,1,0,0,0,6.29,7.71L10.59,12l-4.3,4.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0L12,13.41l4.29,4.3a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42Z" />
+			</svg></button>
+
+		<h4 class="sign__title">پرداخت #51 موفقیت آمیز بود!</h4>
+
+		<div class="sign__group sign__group--row">
+			<label class="sign__label">مبلغ پرداخت شده :</label>
+			<span class="sign__value">50,000 تومان</span>
+		</div>
+
+		<div class="sign__group sign__group--row">
+			<label class="sign__label">روش پرداخت : <b>زرین پال</b></label>
+
+			<span class="sign__text sign__text--small">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+				استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای
+				شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</span>
+		</div>
+	</div>
+	<!-- end modal info -->
+
+	<!-- modal info -->
+
+	<!-- modal info -->
+	<div id="modal-info4" class="zoom-anim-dialog mfp-hide modal modal--info">
+		<span class="modal__icon">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+				<path
+					d="M12,2A10,10,0,1,0,22,12,10.01114,10.01114,0,0,0,12,2Zm0,18a8,8,0,1,1,8-8A8.00917,8.00917,0,0,1,12,20Zm0-8.5a1,1,0,0,0-1,1v3a1,1,0,0,0,2,0v-3A1,1,0,0,0,12,11.5Zm0-4a1.25,1.25,0,1,0,1.25,1.25A1.25,1.25,0,0,0,12,7.5Z">
+				</path>
+			</svg>
+		</span>
+
+		<button class="modal__close" type="button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+				<path
+					d="M13.41,12l4.3-4.29a1,1,0,1,0-1.42-1.42L12,10.59,7.71,6.29A1,1,0,0,0,6.29,7.71L10.59,12l-4.3,4.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0L12,13.41l4.29,4.3a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42Z" />
+			</svg></button>
+
+		<h4 class="sign__title">مثالی از اعلان ها</h4>
+
+		<div class="sign__group sign__group--row">
+			<label class="sign__label">تمدید خودکار :</label>
+			<span class="sign__value">50,000 تومان</span>
+		</div>
+
+		<div class="sign__group sign__group--row">
+			<span class="sign__text sign__text--small">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+				استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای
+				شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</span>
+		</div>
+	</div>
+	<!-- end modal info -->
+
+	<!-- modal info -->
+	<div id="modal-info5" class="zoom-anim-dialog mfp-hide modal modal--info">
+		<span class="modal__icon modal__icon--purple">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+				<path
+					d="M18,7h-.35A3.45,3.45,0,0,0,18,5.5a3.49,3.49,0,0,0-6-2.44A3.49,3.49,0,0,0,6,5.5,3.45,3.45,0,0,0,6.35,7H6a3,3,0,0,0-3,3v2a1,1,0,0,0,1,1H5v6a3,3,0,0,0,3,3h8a3,3,0,0,0,3-3V13h1a1,1,0,0,0,1-1V10A3,3,0,0,0,18,7ZM11,20H8a1,1,0,0,1-1-1V13h4Zm0-9H5V10A1,1,0,0,1,6,9h5Zm0-4H9.5A1.5,1.5,0,1,1,11,5.5Zm2-1.5A1.5,1.5,0,1,1,14.5,7H13ZM17,19a1,1,0,0,1-1,1H13V13h4Zm2-8H13V9h5a1,1,0,0,1,1,1Z">
+				</path>
+			</svg>
+		</span>
+
+		<button class="modal__close" type="button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+				<path
+					d="M13.41,12l4.3-4.29a1,1,0,1,0-1.42-1.42L12,10.59,7.71,6.29A1,1,0,0,0,6.29,7.71L10.59,12l-4.3,4.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0L12,13.41l4.29,4.3a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42Z" />
+			</svg></button>
+
+		<h4 class="sign__title">شما هدیه دریافت کردید !</h4>
+
+		<div class="sign__group sign__group--row">
+			<span class="sign__text sign__text--small">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+				استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای
+				شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</span>
+
+			<span class="sign__text sign__text--small">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+				استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای
+				شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</span>
+		</div>
+	</div>
+	<!-- end modal info -->
+
+	<div class="comments" style="padding-right: 12px; padding-bottom: 70px;" dir="rtl">
+		<div class="comments__title">
+			<h4>نظرات</h4>
+		</div>
+
+		<ul class="comments__list" id="commentsList">
+			<!-- Comments will be loaded here dynamically -->
+		</ul>
+
+		<form action="#" class="comments__form" id="commentForm">
+			<div class="sign__group">
+				<textarea id="text" name="text" class="sign__textarea" placeholder="نظر شما . . ."></textarea>
+			</div>
+			<button type="button" class="sign__btn" id="submitComment">ارسال</button>
+		</form>
+	</div>
+
+
+	<!-- JS -->
+	<script>
+		function getQueryParam(name) {
+			const urlParams = new URLSearchParams(window.location.search);
+			return urlParams.get(name);
+		}
+		document.addEventListener('DOMContentLoaded', function () {
+			// Function to get query parameter by name
+
+			const podcastId = getQueryParam('podcast_id');
+			if (podcastId) {
+				fetch(`http://192.168.43.233:8000/api/podcasts/${podcastId}/`)
+					.then(response => response.json())
+					.then(data => {
+						document.getElementById('artist-image').src = data.image;
+						document.getElementById('artist-title').textContent = data.title;
+						document.getElementById('artist-author').textContent = data.author;
+						document.getElementById('artist-description').textContent = data.description;
+
+						// Additional descriptions and list items can be updated similarly if needed
+						document.getElementById('additional-description-1').textContent = data.description;
+						document.getElementById('additional-description-2').textContent = data.description;
+						document.getElementById('additional-description-3').innerHTML = `${data.description} <a href="#">لینک</a> ${data.description}`;
+					})
+					.catch(error => console.error('Error fetching podcast data:', error));
+			} else {
+				console.error('Podcast ID not found in query parameters.');
+			}
+		});
+	</script>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			// Function to get query parameter by name
+			function getQueryParam(name) {
+				const urlParams = new URLSearchParams(window.location.search);
+				return urlParams.get(name);
+			}
+
+			const podcastId = getQueryParam('podcast_id');
+			if (podcastId) {
+				fetch(`http://192.168.43.233:8000/api/podcasts/${podcastId}/`)
+					.then(response => response.json())
+					.then(data => {
+						const podcastUrl = window.location.href;
+						const podcastTitle = encodeURIComponent(data.title);
+
+						document.querySelector('.share__link--fb').href = `https://www.facebook.com/sharer/sharer.php?u=${podcastUrl}`;
+						document.querySelector('.share__link--tw').href = `https://twitter.com/intent/tweet?text=${podcastTitle}`;
+						document.querySelector('.share__link--tl').href = `https://telegram.me/share/url?&text=${podcastTitle}`;
+
+						// Update other elements with podcast data
+						document.getElementById('artist-image').src = data.image;
+						document.getElementById('artist-title').textContent = data.title;
+						document.getElementById('artist-author').textContent = data.author;
+						document.getElementById('artist-description').textContent = data.description;
+					})
+					.catch(error => console.error('Error fetching podcast data:', error));
+			} else {
+				console.error('Podcast ID not found in query parameters.');
+			}
+		});
+	</script>
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			function getQueryParam(name) {
+				const urlParams = new URLSearchParams(window.location.search);
+				return urlParams.get(name);
+			}
+
+			const podcastId = getQueryParam('podcast_id');
+			fetch(`http://192.168.43.233:8000/api/podcasts/${podcastId}/episodes`)
+				.then(response => response.json())
+				.then(data => {
+					const podcastList = document.getElementById('podcast-list');
+					const playerCover = document.querySelector('.player__cover img');
+					const playerTitle = document.querySelector('.player__title');
+					const playerArtist = document.querySelector('.player__artist');
+					const playerAudio = document.getElementById('audio');
+
+					const podcasts = Array.isArray(data) ? data : [data];
+
+					// Sort podcasts by date to get the latest episode
+					podcasts.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+
+					// Set the player with the latest episode
+					if (podcasts.length > 0) {
+						const latestPodcast = podcasts[0];
+						playerCover.src = latestPodcast.image;
+						playerCover.alt = latestPodcast.title;
+						playerTitle.textContent = latestPodcast.title;
+						playerArtist.textContent = latestPodcast.podcast_name;
+						playerAudio.src = latestPodcast.audio_file;
+					}
+
+					// Append episodes to the list
+					podcasts.forEach((podcast, index) => {
+						const listItem = document.createElement('li');
+						listItem.className = 'single-item';
+						listItem.innerHTML = `
+                    <a data-playlist data-title="${podcast.title}" data-artist="${podcast.podcast_name}" data-img="${podcast.image}" href="${podcast.audio_file}" class="single-item__cover">
+                        <img src="${podcast.image}" alt="${podcast.title}">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M16,2a3,3,0,0,0-3,3V19a3,3,0,0,0,6,0V5A3,3,0,0,0,16,2Zm1,17a1,1,0,0,1-2,0V5a1,1,0,0,1,2,0ZM8,2A3,3,0,0,0,5,5V19a3,3,0,0,0,6,0V5A3,3,0,0,0,8,2ZM9,19a1,1,0,0,1-2,0V5A1,1,0,0,1,9,5Z"/>
+                        </svg>
+                    </a>
+                    <div class="single-item__title">
+                        <h4><a href="#">${podcast.title}</a></h4>
+                    </div>
+                    <a  class="single-item__add likee" data-episode-id="${podcast.id}">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                            		<path d="M7.493 18.5c-.425 0-.82-.236-.975-.632A7.48 7.48 0 0 1 6 15.125c0-1.75.599-3.358 1.602-4.634.151-.192.373-.309.6-.397.473-.183.89-.514 1.212-.924a9.042 9.042 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75A.75.75 0 0 1 15 2a2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H14.23c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23h-.777ZM2.331 10.727a11.969 11.969 0 0 0-.831 4.398 12 12 0 0 0 .52 3.507C2.28 19.482 3.105 20 3.994 20H4.9c.445 0 .72-.498.523-.898a8.963 8.963 0 0 1-.924-3.977c0-1.708.476-3.305 1.302-4.666.245-.403-.028-.959-.5-.959H4.25c-.832 0-1.612.453-1.918 1.227Z" />
+                        </svg>
+                    </a>
+                    <a href="${podcast.audio_file}" class="single-item__export">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M21,14a1,1,0,0,0-1,1v4a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V15a1,1,0,0,0-2,0v4a3,3,0,0,0,3,3H19a3,3,0,0,0,3-3V15A1,1,0,0,0,21,14Zm-9.71,1.71a1,1,0,0,0,.33.21.94.94,0,0,0,.76,0,1,1,0,0,0,.33-.21l4-4a1,1,0,0,0-1.42-1.42L13,12.59V3a1,1,0,0,0-2,0v9.59l-2.29-2.3a1,1,0,1,0-1.42,1.42Z"/>
+                        </svg>
+                    </a>
+					<a class="single-item__export moreinfo" data-episode-id="${podcast.id}">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+							<path fill-rule="evenodd" d="M5.625 1.5c-1.036 0-1.875.84-1.875 1.875v17.25c0 1.035.84 1.875 1.875 1.875h12.75c1.035 0 1.875-.84 1.875-1.875V12.75A3.75 3.75 0 0 0 16.5 9h-1.875a1.875 1.875 0 0 1-1.875-1.875V5.25A3.75 3.75 0 0 0 9 1.5H5.625ZM7.5 15a.75.75 0 0 1 .75-.75h7.5a.75.75 0 0 1 0 1.5h-7.5A.75.75 0 0 1 7.5 15Zm.75 2.25a.75.75 0 0 0 0 1.5H12a.75.75 0 0 0 0-1.5H8.25Z" clip-rule="evenodd" />
+							<path d="M12.971 1.816A5.23 5.23 0 0 1 14.25 5.25v1.875c0 .207.168.375.375.375H16.5a5.23 5.23 0 0 1 3.434 1.279 9.768 9.768 0 0 0-6.963-6.963Z" />
+						</svg>
+					</a>
+                `;
+						podcastList.appendChild(listItem);
+
+						if (podcast.ai_summary) {
+							const more_info = document.createElement('div');
+							more_info.innerHTML = `<h2 style="color: #cbcbcb; padding: 15px;">خلاصه تولید شده توسط هوش مصنوعی</h2>`;
+							more_info.innerHTML += `<p style="color: #cbcbcb; padding: 15px;">${podcast.ai_summary}</p>`;
+							// more_info.innerHTML += `<p style="color: #cbcbcb; padding: 15px;">${podcast.transcript}</p>`;
+							if (podcast.podcast_name.includes("مصنوعی")) {
+								more_info.innerHTML += `<p style="color: #cbcbcb; padding: 15px;">${podcast.description}</p>`;
+							}
+							more_info.className = 'show';
+							more_info.id = `more_info_${podcast.id}`;
+							podcastList.appendChild(more_info);
+						}
+					});
+
+					// Add event listeners for dropdown buttons
+					document.querySelectorAll('.moreinfo').forEach(button => {
+						button.addEventListener('click', function () {
+							const episodeId = this.getAttribute('data-episode-id');
+							console.log('Episode ID:', episodeId);
+							const moreInfo = document.getElementById(`more_info_${episodeId}`);
+							console.log('More info:', moreInfo);
+							if (moreInfo) {
+								moreInfo.classList.toggle('show');
+							}
+						});
+					});
+				})
+				.catch(error => console.error('Error fetching podcasts:', error));
+
+			
+			
+		});
+		document.querySelectorAll('.likee').forEach(button => {
+				button.addEventListener('click', function (event) {
+					console.log('aaaaaaaa');
+					
+					event.preventDefault();
+					const episodeId = this.getAttribute('data-episode-id');
+					const userId = localStorage.getItem('user_id'); // Assuming user_id is stored in localStorage
+
+					fetch('http://192.168.43.233:8000/api/likes/like-episode/', {
+						method: 'POST',
+						headers: {
+							'Content-Type': 'application/json'
+						},
+						body: JSON.stringify({
+							user_id: userId,
+							episode_id: episodeId
+						})
+					})
+						.then(response => {
+							if (response.status === 201) {
+								alert('Episode liked successfully');
+							} else if (response.status === 200) {
+								alert('Episode already liked');
+							} else {
+								throw new Error('Failed to like episode');
+							}
+						})
+						.catch(error => {
+							console.error('Error liking episode:', error);
+							alert('Error liking episode. Please try again later.');
+						});
+				});
+			});
+		document.addEventListener('DOMContentLoaded', function () {
+			// Initialize Plyr player once
+			const player = new Plyr('#audio', {
+				controls: ['play', 'progress', 'current-time', 'mute', 'volume']
+			});
+
+			let currentlyPlaying = null;
+
+			// Event delegation for dynamically added play buttons
+			document.addEventListener('click', function (e) {
+				const playButton = e.target.closest('[data-playlist]');
+				if (!playButton) return;
+
+				e.preventDefault();
+
+				// Get data attributes
+				const audioSrc = playButton.getAttribute('href');
+				const title = playButton.getAttribute('data-title');
+				const artist = playButton.getAttribute('data-artist');
+				const image = playButton.getAttribute('data-img');
+
+				// Update player UI
+				document.querySelector('.player__title').textContent = title;
+				document.querySelector('.player__artist').textContent = artist;
+				document.querySelector('.player__cover img').src = image;
+
+				// Check if clicking the same track
+				if (currentlyPlaying === playButton) {
+					if (player.playing) {
+						player.pause();
+						playButton.classList.remove('playing');
+					} else {
+						player.play();
+						playButton.classList.add('playing');
+					}
+					return;
+				}
+
+				// Remove playing class from previous track
+				if (currentlyPlaying) {
+					currentlyPlaying.classList.remove('playing');
+				}
+
+				// Update audio source
+				player.source = {
+					type: 'audio',
+					sources: [{
+						src: audioSrc,
+						type: 'audio/mp3'
+					}]
+				};
+
+				// Play the new track
+				player.play().then(() => {
+					playButton.classList.add('playing');
+					currentlyPlaying = playButton;
+				}).catch(error => {
+					console.error('Error playing audio:', error);
+				});
+			});
+
+			// Handle player state changes
+			player.on('play', () => {
+				document.querySelector('.player').classList.add('player--active');
+			});
+
+			player.on('pause', () => {
+				document.querySelector('.player').classList.remove('player--active');
+			});
+
+			player.on('ended', () => {
+				if (currentlyPlaying) {
+					currentlyPlaying.classList.remove('playing');
+				}
+			});
+		});
+
+
+	</script>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			const commentsList = document.getElementById('commentsList');
+			const productId = getQueryParam('podcast_id');
+			const apiUrl = `http://192.168.43.233:8000/api/comments/podcast/${productId}/`;
+
+			// Fetch comments from API
+			fetch(apiUrl)
+				.then(response => {
+					if (response.status === 404) {
+						return null;
+					}
+					return response.json();
+				})
+				.then(data => {
+					if (!data) return;
+
+					data.forEach(comment => {
+						const listItem = document.createElement('li');
+						listItem.classList.add('comments__item');
+
+						listItem.innerHTML = `
+						<div class="comments__autor">
+							<img class="comments__avatar" src="img/avatar.svg" alt="">
+							<span class="comments__name">${comment.commenter_name}</span>
+							<span class="comments__time">${new Date(comment.created_at).toLocaleString('fa-IR')}</span>
+						</div>
+						<p class="comments__text" style="border-bottom: none !important;">${comment.content}</p>
+						`;
+
+						commentsList.appendChild(listItem);
+					});
+				})
+				.catch(error => console.error('Error fetching comments:', error));
+		});
+	</script>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+
+			// Add new comment
+			document.getElementById('submitComment').addEventListener('click', function () {
+				const commentText = document.getElementById('text').value;
+				const userId = localStorage.getItem('user_id');
+				const podcastId = getQueryParam('podcast_id');
+
+				fetch("http://192.168.43.233:8000/api/comments/", {
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/json'
+					},
+					body: JSON.stringify({
+						user: userId,
+						podcast: podcastId,
+						content: commentText
+					})
+				})
+					.then(response => {
+						if (response.status === 201) {
+							return response.json();
+						} else {
+							throw new Error('Failed to add comment');
+						}
+					})
+					.then(data => {
+						const listItem = document.createElement('li');
+						listItem.classList.add('comments__item');
+
+						listItem.innerHTML = `
+					<div class="comments__autor">
+						<img class="comments__avatar" src="img/avatar.svg" alt="">
+						<span class="comments__name">${data.commenter_name}</span>
+						<span class="comments__time">${new Date(data.created_at).toLocaleString('fa-IR')}</span>
+					</div>
+					<p class="comments__text" style="border-bottom: none !important;">${data.content}</p>
+				`;
+
+						commentsList.appendChild(listItem);
+						document.getElementById('text').value = ''; // Clear the textarea
+					})
+					.catch(error => {
+						console.error('Error adding comment:', error);
+						alert('Error adding comment. Please try again later.');
+					});
+			});
+		});
+	</script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/smooth-scrollbar.js"></script>
+	<script src="js/select2.min.js"></script>
+	<script src="js/slider-radio.js"></script>
+	<script src="js/jquery.inputmask.min.js"></script>
+	<script src="js/plyr.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
