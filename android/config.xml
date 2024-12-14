@@ -1,11 +1,41 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.cordova.hellocordova" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>HelloCordova</name>
-    <description>Sample Apache Cordova App</description>
-    <author email="dev@cordova.apache.org" href="https://cordova.apache.org">
-        Apache Cordova Team
+<widget id="io.revisto.minipodcast" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>Mini Podcast</name>
+    <description>A mini podcast social media application</description>
+    <author email="theRevisto@gmail.com" href="https://revisto.lol">
+        Revisto Team
     </author>
+    <icon src="www/img/logo.png" density="ldpi" />
     <content src="start.html" />
+    <access origin="http://api.revisto.lol" />
+    <access origin="https://api.revisto.lol" />
+    <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
+    <allow-navigation href="http://api.revisto.lol/*" />
+    <allow-navigation href="https://api.revisto.lol/*" />
+    <allow-navigation href="*" />
+    <allow-intent href="*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="geo:*" />
+    <allow-intent href="mailto:*" />
+    <preference name="AndroidInsecureFileModeEnabled" value="true" />
+    <preference name="MixedContentMode" value="2" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+        <preference name="LoadingDialog" value="Loading..." />
+        <preference name="HideKeyboardFormAccessoryBar" value="true" />
+        <preference name="Fullscreen" value="true" />
+        
+        <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
+            <application android:usesCleartextTraffic="true" android:networkSecurityConfig="@xml/network_security_config" />
+        </edit-config>
+        <resource-file src="resources/android/xml/network_security_config.xml" target="app/src/main/res/xml/network_security_config.xml" />
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.INTERNET" />
+            <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+            <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+        </config-file>
+    </platform>
 </widget>

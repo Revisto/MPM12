@@ -14,12 +14,18 @@
   "license": "Apache-2.0",
   "devDependencies": {
     "cordova-android": "^13.0.0",
-    "cordova-browser": "^7.0.0"
+    "cordova-browser": "^7.0.0",
+    "cordova-plugin-enable-cleartext-traffic": "^2.1.0",
+    "cordova-plugin-network-information": "^3.0.0"
   },
   "cordova": {
     "platforms": [
       "browser",
       "android"
-    ]
+    ],
+    "plugins": {
+      "cordova-plugin-network-information": {},
+      "cordova-plugin-enable-cleartext-traffic": {}
+    }
   }
 }
